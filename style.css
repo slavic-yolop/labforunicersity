@@ -1,41 +1,44 @@
-/* Night Mode: Cyberpunk Twilight (fixed rounded corners) */
+/* Night Mode: Cyberpunk Twilight (force fixed rounded corners) */
 body.night {
-    background-color: #1a1a2e;
-    color: #e0e0e0;
+    background-color: #1a1a2e !important;
+    color: #e0e0e0 !important;
 }
 
 body.night h1, body.night h2 {
-    color: #c77dff;
+    color: #c77dff !important;
 }
 
 body.night .modal-content {
-    background-color: #2a2a40;
-    color: #f0f0f0;
-    border-radius: 8px;
+    background-color: #2a2a40 !important;
+    color: #f0f0f0 !important;
+    border-radius: 10px !important;
 }
 
 body.night input,
 body.night textarea {
-    background-color: #393960;
-    color: #ffffff;
-    border: 1px solid #7f5af0;
-    border-radius: 6px;
+    background-color: #393960 !important;
+    color: #ffffff !important;
+    border: 1px solid #7f5af0 !important;
+    border-radius: 8px !important;
 }
 
 body.night .modal-content button {
-    background: #7f5af0;
-    color: white;
-    border-radius: 6px;
+    background: #7f5af0 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
 }
 
 body.night #comments-container {
-    background: #252539;
-    color: #dcdcdc;
-    border: 1px solid #44446a;
-    border-radius: 6px;
-    padding: 10px;
+    background: #252539 !important;
+    color: #dcdcdc !important;
+    border: 1px solid #44446a !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
 }
 
 body.night #comments-container p {
-    color: #eeeeee;
+    color: #eeeeee !important;
 }
