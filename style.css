@@ -1,4 +1,4 @@
-/* Night Mode: Cyberpunk Twilight */
+/* Night Mode: Cyberpunk Twilight (fixed rounded corners) */
 body.night {
     background-color: #1a1a2e;
     color: #e0e0e0;
@@ -11,23 +11,29 @@ body.night h1, body.night h2 {
 body.night .modal-content {
     background-color: #2a2a40;
     color: #f0f0f0;
+    border-radius: 8px;
 }
 
-body.night input, body.night textarea {
+body.night input,
+body.night textarea {
     background-color: #393960;
     color: #ffffff;
     border: 1px solid #7f5af0;
+    border-radius: 6px;
 }
 
 body.night .modal-content button {
     background: #7f5af0;
     color: white;
+    border-radius: 6px;
 }
 
 body.night #comments-container {
     background: #252539;
     color: #dcdcdc;
     border: 1px solid #44446a;
+    border-radius: 6px;
+    padding: 10px;
 }
 
 body.night #comments-container p {
