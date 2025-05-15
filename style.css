@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+h1, h2 {
+    color: #2c3e50;
+}
+.subtitle {
+    color: #555;
+}
+ul {
+    list-style: square inside;
+}
+footer {
+    margin-top: 30px;
+    color: #777;
+    text-align: center;
+}
+
+/* Comments */
+#comments-container {
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+#comments-container p {
+    margin: 5px 0;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+}
+.modal-content input, .modal-content textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.modal-content button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#close-modal {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Toggle */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Night Mode */
+body.night {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.night h1, body.night h2 {
+    color: #66ffcc;
+}
+
+body.night .modal-content {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.night input, body.night textarea {
+    background-color: #2e2e2e;
+    color: white;
+    border: 1px solid #666;
+}
+
+/* Night mode for comments */
+body.night #comments-container {
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+body.night #comments-container p {
+    color: #ccc;
+}
