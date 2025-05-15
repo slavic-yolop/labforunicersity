@@ -1,44 +1,151 @@
-/* Night Mode: Cyberpunk Twilight (force fixed rounded corners) */
-body.night {
-    background-color: #1a1a2e !important;
-    color: #e0e0e0 !important;
+/* === Base Styles === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-body.night h1, body.night h2 {
-    color: #c77dff !important;
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+.subtitle {
+    color: #555;
+}
+
+ul {
+    list-style: square inside;
+}
+
+footer {
+    margin-top: 30px;
+    color: #777;
+    text-align: center;
+}
+
+/* === Comments === */
+#comments-container {
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+}
+#comments-container p {
+    margin: 5px 0;
+}
+
+/* === Modal === */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.modal-content button:hover {
+    background: #2980b9;
+}
+
+#close-modal {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* === Theme Toggle === */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+/* === Night Theme === */
+body.night {
+    background-color: #1e1e2f;
+    color: #e0e0e0;
+}
+
+body.night h1,
+body.night h2 {
+    color: #9c88ff;
+}
+
+body.night .subtitle {
+    color: #bbb;
 }
 
 body.night .modal-content {
-    background-color: #2a2a40 !important;
-    color: #f0f0f0 !important;
-    border-radius: 10px !important;
+    background-color: #2a2a40;
+    color: #f0f0f0;
+    border-radius: 10px;
 }
 
 body.night input,
 body.night textarea {
-    background-color: #393960 !important;
-    color: #ffffff !important;
-    border: 1px solid #7f5af0 !important;
-    border-radius: 8px !important;
+    background-color: #393960;
+    color: #ffffff;
+    border: 1px solid #7f5af0;
+    border-radius: 6px;
 }
 
 body.night .modal-content button {
-    background: #7f5af0 !important;
-    color: white !important;
-    border: none !important;
-    padding: 10px 20px !important;
-    border-radius: 8px !important;
-    cursor: pointer !important;
+    background: #7f5af0;
+    color: white;
 }
 
 body.night #comments-container {
-    background: #252539 !important;
-    color: #dcdcdc !important;
-    border: 1px solid #44446a !important;
-    border-radius: 8px !important;
-    padding: 12px !important;
+    background: #2f2f48;
+    color: #dcdcdc;
+    border-radius: 8px;
+    border: 1px solid #44446a;
+    padding: 10px;
 }
 
 body.night #comments-container p {
-    color: #eeeeee !important;
+    color: #eeeeee;
+}
+
+body.night footer {
+    color: #999;
 }
